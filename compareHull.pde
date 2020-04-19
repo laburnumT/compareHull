@@ -12,7 +12,7 @@ void setup() {
 
   points = new ArrayList<PVector>();
 
-  for (int i = 0; i < 5; i += 1) {
+  for (int i = 0; i < 500; i += 1) {
     PVector temp = new PVector(random(50, width / 2 - 50), random(50, height - 50));
     points.add(temp);
   }
