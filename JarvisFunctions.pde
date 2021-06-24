@@ -9,18 +9,13 @@ void jSetup() {
     jPoints.add(new PVector().set(p));
   }
 
-
-
   jHull = new ArrayList<PVector>();
-  
-
-
+ 
   jPrepare();
 }
 
 
 void jDraw() {
-
   for (PVector p : jPoints) {
     stroke(255);
     strokeWeight(8);
@@ -76,15 +71,6 @@ void jDraw() {
     jNextVertex = new PVector().set(jLeftMost);
   }
 }
-
-
-
-//void mousePressed() {
-//  loop();
-//  jEnd = false;
-//  jPoints.add(new PVector(mouseX, mouseY));
-//  jPrepare();
-//}
 
 void jPrepare() {
   jHull.clear();
